@@ -1,9 +1,9 @@
 # KLTN_25
-Multi-Users MIMO with linear processing schemes
+Massive MIMO with linear processing schemes
 
 Analyzing the performance of linear processing schemes in UL MU-MIMO
 - **MRC**, **ZF**, **LMMSE**
-- Channel models: LOS, NLOS (Rayleigh Fading, ULA,..)
+- Channel models: LOS, NLOS
 - Equal Power Allocation
   
 Analyzing the performance of linear processing schemes in DL MU-MIMO

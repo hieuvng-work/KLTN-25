@@ -1,24 +1,4 @@
 function [powerAllocation,waterLevel] = functionWaterfilling(totalPower,lambdaInv)
-%Compute the power allocation for MIMO point-to-point links, using the
-%classic waterfilling algorithm. This is used in the paper:
-%
-%Emil Björnson, Per Zetterberg, Mats Bengtsson, Björn Ottersten, "Capacity
-%Limits and Multiplexing Gains of MIMO Channels with Transceiver
-%Impairments," IEEE Communications Letters, vol. 17, no. 1, pp. 91-94,
-%January 2013.
-%
-%This is version 1.0. (Last edited: 2014-03-22)
-%
-%INPUT:
-%totalPower = Total transmit power to be allocated over the singular 
-%             directions of the channel
-%lambdaInv  = Nt x 1 vector with inverses of the squared singular values of MIMO channel
-%             (or the (interference power + noise power)/(channel gain)
-%             for each singular direction of the channel).
-%
-%OUTPUT:
-%powerAllocation = Power allocation computed using classical waterfilling
-
 Nt = length(lambdaInv); %Extract number of singular directions
 lambdaInvSorted = sort(lambdaInv,'ascend'); %Sort lambdaInv in ascending order
 
@@ -28,3 +8,5 @@ waterLevel = alpha_candidates(optimalIndex); %Extract the optimal Lagrange multi
 
 powerAllocation = waterLevel-lambdaInv; %Compute power allocation
 powerAllocation(powerAllocation<0) = 0; %Make sure that inactive singular directions receive zero power
+
+end

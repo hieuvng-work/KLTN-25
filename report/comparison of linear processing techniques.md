@@ -20,9 +20,9 @@
 
 **Bảng 1.3: Bảng so sánh hiệu suất kỹ thuật tiền mã hóa ZF trong DL Massive MIMO**
 
-| Tiêu chí             | ZF - Đều                 | ZF - Tối ưu            |
+| Tiêu chí             | ZF - Phân bổ công suất đều                 | ZF - Phân bổ công suất tối ưu            |
 |-----------------------|---------------------------|-------------------------|
 | Tăng số lượng anten   | Kém                       | Tốt                     |
 | SNR thấp              | Kém                       | Tốt                     |
-| SNR cao               | Tương tự                  | Tốt                     |
+| SNR cao               | Tương tự như phân bổ công suất đều                  | Tốt                     |
 | Hiệu suất tổng thể    | Giới hạn ở SNR thấp       | Tối ưu                  |
